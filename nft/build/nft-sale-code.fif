@@ -8,6 +8,7 @@ PROGRAM{
   DECLPROC recv_internal
   DECLPROC recv_external
   72748 DECLMETHOD get_sale_data
+  113617 DECLMETHOD supported_interfaces
   load_data PROC:<{
     // 
     c4 PUSH	//  _1
@@ -257,5 +258,10 @@ PROGRAM{
     // 
     load_data INLINECALLDICT	//  marketplace_address nft_address nft_owner_address full_price fees_cell
     load_fees INLINECALLDICT	//  marketplace_address nft_address nft_owner_address full_price marketplace_fee royalty_address royalty_amount
+  }>
+  supported_interfaces PROC:<{
+    // 
+    123515602279859691144772641439386770278 PUSHINT	//  _0=123515602279859691144772641439386770278
+    264662364918749046299008556064732745879 PUSHINT	//  _0=123515602279859691144772641439386770278 _1=264662364918749046299008556064732745879
   }>
 }END>c

@@ -8,6 +8,7 @@ PROGRAM{
   DECLPROC transfer_ownership
   DECLPROC recv_internal
   102351 DECLMETHOD get_nft_data
+  113617 DECLMETHOD supported_interfaces
   force_chain PROC:<{
     //  addr
     REWRITESTDADDR	//  _8 _9
@@ -238,5 +239,10 @@ PROGRAM{
   get_nft_data PROC:<{
     // 
     load_data CALLDICT	//  init? index collection_address owner_address content
+  }>
+  supported_interfaces PROC:<{
+    // 
+    123515602279859691144772641439386770278 PUSHINT	//  _0=123515602279859691144772641439386770278
+    335311041746749310391831243327243670292 PUSHINT	//  _0=123515602279859691144772641439386770278 _1=335311041746749310391831243327243670292
   }>
 }END>c

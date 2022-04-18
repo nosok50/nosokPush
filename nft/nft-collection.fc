@@ -163,3 +163,9 @@ cell get_nft_content(int index, cell individual_nft_content) method_id {
                       .store_ref(individual_nft_content)
           .end_cell());
 }
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  ;; org.ton.nft.collection.static.v0
+  return (123515602279859691144772641439386770278, 91015569857469019320518412908088973252);
+}

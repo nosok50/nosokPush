@@ -142,3 +142,10 @@ int min_tons_for_storage() asm "50000000 PUSHINT"; ;; 0.05 TON
   (int init?, int index, slice collection_address, slice owner_address, cell content) = load_data();
   return (init?, index, collection_address, owner_address, content);
 }
+
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  ;; org.ton.nft.item.v0
+  return (123515602279859691144772641439386770278, 335311041746749310391831243327243670292);
+}

@@ -167,3 +167,10 @@ int min_gas_amount() asm "1000000000 PUSHINT"; ;; 1 TON
   var (marketplace_fee, royalty_address, royalty_amount) = load_fees(fees_cell);
   return (marketplace_address, nft_address, nft_owner_address, full_price, marketplace_fee, royalty_address, royalty_amount);
 }
+
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  ;; org.ton.nft.sale.v0
+  return (123515602279859691144772641439386770278, 264662364918749046299008556064732745879);
+}

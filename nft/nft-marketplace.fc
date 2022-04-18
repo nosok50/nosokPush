@@ -52,3 +52,9 @@
 
 () recv_external(slice in_msg) impure {
 }
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  ;; org.ton.nft.marketplace.v0
+  return (123515602279859691144772641439386770278, 270969778309576092849819122152938211605);
+}
