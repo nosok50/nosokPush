@@ -119,3 +119,13 @@ slice get_wallet_address(slice owner_address) method_id {
     (int total_supply, slice admin_address, cell content, cell jetton_wallet_code) = load_data();
     return calculate_user_jetton_wallet_address(owner_address, my_address(), jetton_wallet_code);
 }
+
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  return (
+    123515602279859691144772641439386770278, ;; org.ton.introspection.v0
+    219360898373884516143141541105899042493, ;; org.ton.jetton.minter.v0
+    139484048315648960838108136892313358185  ;; org.ton.jetton.minter-ico.v0
+  );
+}

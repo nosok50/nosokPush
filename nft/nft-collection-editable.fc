@@ -170,6 +170,11 @@ cell get_nft_content(int index, cell individual_nft_content) method_id {
 
 _ supported_interfaces() method_id {
   ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
-  ;; org.ton.nft.collection.editable.v0
-  return (123515602279859691144772641439386770278, 288775532707045173422308480856246484977);
+  
+  return (
+    123515602279859691144772641439386770278,  ;; org.ton.introspection.v0
+    79301511987954798721021960341920527406,   ;; org.ton.nft.collection.v0
+    288775532707045173422308480856246484977,  ;; org.ton.nft.collection-editable.v0
+    230202824289602457100327801751963344072   ;; org.ton.nft.royalty.v0
+  );
 }

@@ -239,3 +239,12 @@ int gas_consumption() asm "10000000 PUSHINT"; ;; 0.01 TON
 (int, slice, slice, cell) get_wallet_data() method_id {
   return load_data();
 }
+
+
+_ supported_interfaces() method_id {
+  ;; see https://github.com/ton-foundation/specs/blob/main/specs/wtf-0001.md
+  return (
+    123515602279859691144772641439386770278, ;; org.ton.introspection.v0
+    186756313497726271784320954963812800250  ;; org.ton.jetton.wallet.v0
+  );
+}
