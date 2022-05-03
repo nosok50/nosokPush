@@ -220,7 +220,7 @@ PROGRAM{
         107 STU	//  callback_data _76
         STREF	//  _77
         ENDC	//  callback
-        64 PUSHINT	//  callback _79=64
+        7 PUSHPOW2	//  callback _79=128
         SENDRAWMSG
       }>ELSE<{
         2DROP	// 
