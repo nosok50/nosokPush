@@ -1,8 +1,8 @@
 {
-  "name": "Marketplace Creatures",
-  "description": "Marketplace Creatures are adorable aquatic beings primarily for demonstrating what can be done using the Marketplace platform. Adopt one today to try out all the Marketplace buying, selling, and bidding feature set.",
-  "image": "https://ton.org/img/duck.svg",
-  "external_link": "https://matketplacecreatures.io",
+  "name": "nosok",
+  "description": "Abilit",
+  "image": "https://ton.org/img/https://raw.githubusercontent.com/nosok50/nosokPush/main/images/Block_of_Diamond_JE6_BE3.png",
+  "external_link": "https://github.com/nosok50/nosokPush",
   "seller_fee_basis_points": 100,
-  "fee_recipient": "0xA97F337c39cccE66adfeCB2BF99C1DdC54C2D721"
+  "fee_recipient": "EQDuaNZL4R0Pt5oi8pyycM6ur6niUMkyUOK7WWwD6jyIAY0V"
 }
